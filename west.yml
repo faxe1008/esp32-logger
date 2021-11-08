@@ -1,0 +1,12 @@
+manifest:
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: 700de003e8494cdb7941962e8e87e48f5f391a17
+      import: true
+  self:
+    # This repository should be cloned to 
+    path: app

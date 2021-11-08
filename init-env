@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source ../.zephyr-venv/bin/activate
+pip install -r ../modules/hal/espressif/requirements.txt
+
+unset IDF_PATH
+export ESPRESSIF_TOOLCHAIN_PATH="${HOME}/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch3-8.4.0/xtensa-esp32-elf"
+export PATH="${PATH}:${ESPRESSIF_TOOLCHAIN_PATH}/bin"
